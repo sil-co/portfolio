@@ -4,7 +4,8 @@ import "./portfolio.scss";
 import {
   allPortfolio,
   webPortfolio,
-  mobilePortfolio
+  mobilePortfolio,
+  githubPortfolio
 } from "../../data";
 
 const Portfolio = () => {
@@ -29,6 +30,10 @@ const Portfolio = () => {
       id: "mobile",
       title: "Mobile App",
     },
+    {
+      id: "github",
+      title: "GitHub",
+    },
     // {
     //   id: "design",
     //   title: "Design",
@@ -52,6 +57,9 @@ const Portfolio = () => {
         break;
       case "mobile":
         setData(mobilePortfolio);
+        break;
+      case "github":
+        setData(githubPortfolio);
         break;
       default:
         setData(allPortfolio);

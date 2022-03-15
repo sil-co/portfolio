@@ -74,10 +74,18 @@ export const webPortfolio = [
 
 export const mobilePortfolio = [
   {
-    id: 2,
+    id: 1,
     title: "MemoApp",
     img: "assets/memo-app2.png",
     href: "https://play.google.com/store/apps/details?id=jp.silco.nativememoapp",
   },
+];
 
+export const githubPortfolio = [
+  {
+    id: 1,
+    title: "GitHub",
+    img: "assets/GitHub-Logo3.png",
+    href: "https://github.com/sil-co",
+  },
 ]
