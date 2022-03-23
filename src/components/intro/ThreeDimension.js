@@ -1,55 +1,32 @@
-import "./three.scss";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Mesh, SphereGeometry } from "three";
 import React, { useRef} from "react";
 import Controls from "./Controls";
 import {Stars} from "@react-three/drei";
 
-
-
-const Thing = () => {
-  const ref = useRef({});
-  useFrame(() => (ref.current.rotation.z += 0.01));
-  return (
-      <mesh
-        ref={ref}
-        onClick={(e) => console.log("clicked")}
-        onPointerOver={(e) => console.log("hovered")}
-        onPointerOut={(e) => console.log("unhovered")}
-      >
-        <planeBufferGeometry attach="geometry" args={[1,1]} />
-        <meshBasicMaterial
-          attach="material"
-          color="hotpink"
-          opacity={0.5}
-          transparent
-        />
-      </mesh>
-  )
-}
-
-const Box = () => {
-  return (
-    <mesh>
-      <boxBufferGeometry attach="geometry" />
-      <meshLambertMaterial attach="material" color="hotpink" />
-    </mesh>
-  )
-}
-
-const Sphere = () => {
-  return (
-    <mesh>
-      <sphereBufferGeometry attach="geometry" />
-      <meshLambertMaterial attach="material" color="#87ccff" wireframe />
-    </mesh>
-  )
-}
+// const Thing = () => {
+//   const ref = useRef({});
+//   useFrame(() => (ref.current.rotation.z += 0.01));
+//   return (
+//       <mesh
+//         ref={ref}
+//         onClick={(e) => console.log("clicked")}
+//         onPointerOver={(e) => console.log("hovered")}
+//         onPointerOut={(e) => console.log("unhovered")}
+//       >
+//         <planeBufferGeometry attach="geometry" args={[1,1]} />
+//         <meshBasicMaterial
+//           attach="material"
+//           color="hotpink"
+//           opacity={0.5}
+//           transparent
+//         />
+//       </mesh>
+//   )
+// }
 
 const Torus = () => {
   const ref = useRef({});
   useFrame(() => {
-    // ref.current.rotation.z += 0.01;
     ref.current.rotation.y += 0.007;
     ref.current.rotation.x += 0.007;
   });
@@ -121,7 +98,6 @@ const Torus5 = () => {
 const SpherePrac = () => {
   const ref = useRef({});
   useFrame(() => {
-    // ref.current.rotation.z += 0.01;
     ref.current.rotation.x += 0.1;
     ref.current.rotation.y += 0.1;
   });
@@ -141,19 +117,16 @@ const SpherePrac = () => {
 
 const ThreeDimension = () => {
   return (
-    <div style={{width: "100vw", height: "90vh"}}>
+    <div style={{width: "100vw", height: "60vh"}}>
       <Canvas>
         <Stars />
-        {/* <Sphere /> */}
         <Torus />
         <Torus2 />
         <Torus3 />
         <Torus4 />
         <Torus5 />
         <SpherePrac />
-        {/* <Box /> */}
         <Controls />
-        {/* <Thing /> */}
         {/* <gridHelper /> */}
         <ambientLight intensity={0.5} />
         <spotLight position={[10,15,10]} angle={0.3} />

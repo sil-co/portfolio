@@ -31,24 +31,24 @@
         align-items: flex-start;
       }
 
-      img {
-        width: 70%;
-        animation: reactIcon 100s linear infinite;
-        // animation-direction: alternate;
+      // img {
+      //   width: 70%;
+      //   animation: reactIcon 100s linear infinite;
+      //   // animation-direction: alternate;
 
-        @include mobile {
-          width: 30%;
-          height: 30%;
-        }
-      }
+      //   @include mobile {
+      //     width: 30%;
+      //     height: 30%;
+      //   }
+      // }
 
-      @keyframes reactIcon {
-        0% {
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
+      // @keyframes reactIcon {
+      //   0% {
+      //   }
+      //   100% {
+      //     transform: rotate(360deg);
+      //   }
+      // }
     }
   }
   .right {
