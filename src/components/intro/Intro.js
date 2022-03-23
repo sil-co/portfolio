@@ -1,6 +1,7 @@
 import "./intro.scss";
 import {init} from 'ityped';
 import { useEffect, useRef } from "react";
+import ThreeDimension from "./ThreeDimension";
 
 const Intro = () => {
 
@@ -19,7 +20,8 @@ const Intro = () => {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/logo512.png" alt="" />
+          {/* <img src="assets/logo512.png" alt="" /> */}
+          <ThreeDimension />
         </div>
       </div>
       <div className="right">
