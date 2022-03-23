@@ -12,7 +12,7 @@ const Intro = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["JavaScript", "React.js", "Sass(scss)"],
+      strings: ["JavaScript", "ReactJS", "Sass(scss)", "ThreeJS"],
     });
   }, []);
 
