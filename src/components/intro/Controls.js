@@ -1,11 +1,10 @@
 import React, { useRef } from "react";
 import {
   extend,
-  ReactThreeFiber,
   useThree,
   useFrame,
 } from "@react-three/fiber";
-import { OrbitControls, Stars } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 extend({ OrbitControls });
 
