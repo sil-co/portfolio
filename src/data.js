@@ -2,48 +2,41 @@
 export const allPortfolio = [
   {
     id: 1,
-    title: "FamiMap",
+    title: "FamiMap [家系図アプリです]",
     img: "assets/familytree1.png",
     href: "https://famimap-5a2a0.web.app",
   },
   {
     id: 2,
-    title: "MemoApp",
+    title: "MemoApp [Android用メモアプリです]",
     img: "assets/memo-app2.png",
     href: "https://play.google.com/store/apps/details?id=jp.silco.nativememoapp",
   },
   {
     id: 3,
-    title: "MangaWorld",
+    title: "MangaWorld [漫画紹介サイトです]",
     img: "assets/manga-world2.png",
     href: "https://agitated-joliot-ce2ba5.netlify.app/",
   },
   {
     id: 4,
-    title: "TypeScript ToDoApp sample email:a@a.com password:password",
+    title: "TypeScript [ToDoアプリです] sample email:a@a.com password:password",
     img: "assets/todolist5.png",
     href: "https://todoapp-84c38.web.app/",
   },
   {
     id: 5,
-    title: "mindmap",
+    title: "mindmap [マインドマップです]",
     img: "assets/mindmap2.png",
     href: "https://dazzling-lamarr-24e155.netlify.app",
   },
+  {
+    id: 6,
+    title: "ToDo [Vanilla JSで作成したToDoアプリです]",
+    img: "assets/todoapp2.png",
+    href: "https://luxury-frangollo-337061.netlify.app/",
+  },
 ];
-
-// export const featuredPortfolio = [
-//   {
-//     id: 1,
-//     title: "Family Tree App",
-//     img: "assets/familytree1.png"
-//   },
-//   {
-//     id: 2,
-//     title: "Family Tree App",
-//     img: "assets/familytree1.png"
-//   },
-// ];
 
 export const webPortfolio = [
   {
@@ -69,6 +62,12 @@ export const webPortfolio = [
     title: "mindmap",
     img: "assets/mindmap2.png",
     href: "https://dazzling-lamarr-24e155.netlify.app",
+  },
+  {
+    id: 5,
+    title: "ToDo [Vanilla JSで作成したToDoアプリです]",
+    img: "assets/todoapp2.png",
+    href: "https://luxury-frangollo-337061.netlify.app/",
   },
 ]
 
